@@ -3,7 +3,7 @@ import { View, Text, TextInput, ScrollView, StyleSheet, TouchableOpacity, Alert,
 import { useRoute, useNavigation, useTheme } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'expo-image-picker';
-import { File, Directory, Paths } from 'expo-file-system';
+import { savePhotoToAppDir, deletePhotoFile } from './evidenceFiles';
 import { Ionicons } from '@expo/vector-icons';
 import { useScaledFontSize } from '../../contexts/SettingsContext';
 import { Picker } from '@react-native-picker/picker'; // Assuming this is used in the project
@@ -82,7 +82,7 @@ const EditCaseScreen = () => {
                     try {
                         // Delete evidence photos
                         for (const evi of caseData.evidence) {
-                            if (evi.photoUri) { try { new File(evi.photoUri).delete(); } catch (err) { console.warn('Failed to delete photo', err); } }
+                            if (evi.photoUri) { try { deletePhotoFile(evi.photoUri); } catch (err) { console.warn('Failed to delete photo', err); } }
                         }
                         await AsyncStorage.removeItem(`@case_${caseId}`);
                         Alert.alert('Deleted', 'The case has been deleted.');
@@ -121,7 +121,7 @@ const EditCaseScreen = () => {
             { text: 'Cancel' },
             { text: 'Delete', style: 'destructive', onPress: async () => {
                 if (evidenceToDelete.photoUri) {
-                    try { new File(evidenceToDelete.photoUri).delete(); } catch (err) { console.warn('Failed to delete photo', err); }
+                    try { deletePhotoFile(evidenceToDelete.photoUri); } catch (err) { console.warn('Failed to delete photo', err); }
                 }
                 setCaseData(prev => ({ ...prev, evidence: prev.evidence.filter(e => e.id !== id) }));
             }}
@@ -149,11 +149,12 @@ const EditCaseScreen = () => {
 
     const savePhoto = async (evidenceId, tempUri) => {
         try {
-            const evidenceDir = new Directory(Paths.document, 'evidence');
-            evidenceDir.create({ intermediates: true, idempotent: true });
-            const dest = new File(evidenceDir, `evidence_${Date.now()}.jpg`);
-            new File(tempUri).copy(dest);
-            handleEvidenceChange(evidenceId, 'photoUri', dest.uri);
+            const destUri = savePhotoToAppDir(tempUri);
+            if (!destUri) {
+                Alert.alert('Not available', 'Saving photos is not supported in the web preview. Try it on your phone with Expo Go.');
+                return;
+            }
+            handleEvidenceChange(evidenceId, 'photoUri', destUri);
         } catch (e) {
             Alert.alert('Error', 'Could not save photo: ' + (e.message || e));
             console.error(e);
