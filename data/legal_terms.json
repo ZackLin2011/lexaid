@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cl_001",
+    "term": "Habeas Corpus",
+    "definition": "A writ requiring a person under arrest to be brought before a judge or into court, especially to secure the person's release unless lawful grounds are shown for their detention.",
+    "category": "criminal"
+  },
+  {
+    "id": "cl_002",
+    "term": "Mens Rea",
+    "definition": "The intention or knowledge of wrongdoing that constitutes part of a crime, as opposed to the action or conduct of the accused (actus reus).",
+    "category": "criminal"
+  },
+  {
+    "id": "cl_003",
+    "term": "Actus Reus",
+    "definition": "The wrongful act or omission that comprises the physical elements of a crime as required by statute.",
+    "category": "criminal"
+  },
+  {
+    "id": "cl_004",
+    "term": "Stare Decisis",
+    "definition": "The legal principle of determining points in litigation according to precedent.",
+    "category": "general"
+  },
+  {
+    "id": "cl_005",
+    "term": "Ultra Vires",
+    "definition": "Beyond one's legal power or authority. An act that is ultra vires is void.",
+    "category": "administrative"
+  },
+  {
+    "id": "cl_006",
+    "term": "Injunction",
+    "definition": "A judicial remedy that restrains a party from beginning or continuing an action threatening or invading the legal right of another, or that compels a party to carry out a certain act.",
+    "category": "civil"
+  },
+  {
+    "id": "cl_007",
+    "term": "Affidavit",
+    "definition": "A written statement confirmed by oath or affirmation, for use as evidence in court.",
+    "category": "civil"
+  },
+  {
+    "id": "cl_008",
+    "term": "Estoppel",
+    "definition": "A legal principle that prevents someone from arguing something or asserting a right that contradicts what they previously said or agreed to by law.",
+    "category": "civil"
+  },
+  {
+    "id": "cl_009",
+    "term": "Fiduciary",
+    "definition": "Relating to the relationship between a trustee and the person or body for whom the trustee acts. It involves trust and confidence.",
+    "category": "civil"
+  },
+  {
+    "id": "cl_010",
+    "term": "Indemnity",
+    "definition": "Security or protection against a loss or other financial burden. A contractual obligation of one party to compensate for the loss incurred by another party.",
+    "category": "civil"
+  }
+]

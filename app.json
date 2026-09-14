@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "LexAid",
+    "slug": "lexaid",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#ffffff",
+    "platforms": ["ios", "android"]
+  }
+}

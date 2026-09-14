@@ -1,0 +1,167 @@
+[
+  {
+    "id": "seed_task_1",
+    "title": "Finalise witness list for R v Smith",
+    "description": "Review all witness statements and confirm the final list of witnesses to be called for the trial. Liaise with prosecution counsel.",
+    "caseId": "seed_1",
+    "dueDate": "2026-09-13T17:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-12T10:00:00.000Z"
+  },
+  {
+    "id": "seed_task_2",
+    "title": "File defence in Jones v Acme Ltd",
+    "description": "The deadline for filing the defence is approaching. Complete the final draft and ensure it is filed with the court and served on the claimant's solicitors.",
+    "caseId": "seed_2",
+    "dueDate": "2026-09-14T09:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-12T11:00:00.000Z"
+  },
+  {
+    "id": "seed_task_3",
+    "title": "Review expert report for Patel v NHS Trust",
+    "description": "The expert medical report has been received. Review it in detail and prepare a summary for the client and counsel.",
+    "caseId": "seed_3",
+    "dueDate": "2026-09-10T12:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-09-08T14:00:00.000Z"
+  },
+  {
+    "id": "seed_task_4",
+    "title": "Prepare for annual CPD requirements",
+    "description": "Review current CPD log and plan remaining courses for the year to meet SRA requirements. This is an ongoing task.",
+    "caseId": null,
+    "dueDate": null,
+    "isLongTerm": true,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-09-01T09:00:00.000Z"
+  },
+  {
+    "id": "seed_task_5",
+    "title": "Draft witness statement for R v Smith",
+    "description": "Draft the primary witness statement for A. Walker based on their preliminary interview. Focus on the timeline of events.",
+    "caseId": "seed_1",
+    "dueDate": "2026-09-20T10:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-13T11:00:00.000Z"
+  },
+  {
+    "id": "seed_task_6",
+    "title": "Prepare skeleton argument for R v Mitchell",
+    "description": "Draft the skeleton argument for the upcoming criminal trial. Key authorities: R v Ghosh and R v Woollin. File by October 20th.",
+    "caseId": "seed_8",
+    "dueDate": "2026-10-20T17:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-13T09:00:00.000Z"
+  },
+  {
+    "id": "seed_task_7",
+    "title": "Mediation prep for Williams v Brightstar",
+    "description": "Prepare position statement and bundle for the court-ordered mediation scheduled for mid-October. Anticipate counter-offer on quantum.",
+    "caseId": "seed_6",
+    "dueDate": "2026-10-12T14:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-13T10:00:00.000Z"
+  },
+  {
+    "id": "seed_task_8",
+    "title": "Appeal bundle for Nakamura v GlobalTech",
+    "description": "Assemble the appeal bundle and ensure all key documents are paginated. Coordinate with the Court of Appeal listing officer.",
+    "caseId": "seed_10",
+    "dueDate": "2026-10-05T16:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-12T15:00:00.000Z"
+  },
+  {
+    "id": "seed_task_9",
+    "title": "Follow up on Thompson v TechCorp compensation",
+    "description": "Chase the defendant's solicitors for payment of the £30,000 compensation award. Deadline for compliance has passed.",
+    "caseId": "seed_5",
+    "dueDate": "2026-08-15T12:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-08-01T10:00:00.000Z"
+  },
+  {
+    "id": "seed_task_10",
+    "title": "File defence witness statements - R v Smith",
+    "description": "Finalise and file the defence witness statements with the Crown Court. Confirm service on the prosecution.",
+    "caseId": "seed_1",
+    "dueDate": "2026-08-25T17:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-08-05T09:00:00.000Z"
+  },
+  {
+    "id": "seed_task_11",
+    "title": "Complete client meeting notes - Brown v Brown",
+    "description": "Write up notes from the client consultation regarding financial disclosure. Send summary to the client for review.",
+    "caseId": "seed_4",
+    "dueDate": "2026-08-08T11:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": true,
+    "createdAt": "2026-08-05T14:00:00.000Z"
+  },
+  {
+    "id": "seed_task_12",
+    "title": "Submit quarterly time recording",
+    "description": "Submit Q3 time sheets and expense claims to the accounts department. Cross-check with client billing records.",
+    "caseId": null,
+    "dueDate": "2026-08-31T18:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": true,
+    "createdAt": "2026-08-15T10:00:00.000Z"
+  },
+  {
+    "id": "seed_task_13",
+    "title": "Order trial bundle - Jones v Acme",
+    "description": "Instruct the court copy service to prepare the trial bundle. Include all pleadings, witness statements and expert reports.",
+    "caseId": "seed_2",
+    "dueDate": "2026-09-25T15:00:00.000Z",
+    "isLongTerm": false,
+    "remind": true,
+    "completed": false,
+    "createdAt": "2026-09-10T11:00:00.000Z"
+  },
+  {
+    "id": "seed_task_14",
+    "title": "Review new CPR amendments",
+    "description": "Read through the Civil Procedure Rule updates effective October 2026. Note any changes affecting ongoing cases.",
+    "caseId": null,
+    "dueDate": "2026-09-18T16:00:00.000Z",
+    "isLongTerm": false,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-09-10T09:00:00.000Z"
+  },
+  {
+    "id": "seed_task_15",
+    "title": "Schedule: Ongoing professional development",
+    "description": "Long-term goal: complete two advanced litigation courses and one mediation workshop by year-end.",
+    "caseId": null,
+    "dueDate": null,
+    "isLongTerm": true,
+    "remind": false,
+    "completed": false,
+    "createdAt": "2026-01-15T09:00:00.000Z"
+  }
+]

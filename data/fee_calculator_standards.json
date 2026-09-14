@@ -1,0 +1,30 @@
+[
+  {
+    "id": "court_fees",
+    "name": "Court Claim Fees (Civil)",
+    "source": "Civil and Family Court Fees (Order 2011)",
+    "summary": "Calculate the required fee for initiating a civil court claim to recover money in England and Wales. Fees are tiered based on the claim's value.",
+    "legal_basis": "The fees for commencing a civil claim in the High Court or County Court are prescribed by the Civil and Family Court Fees (Order 2011), as amended. The fee structure is based on the monetary value of the claim. For claims up to £10,000, a fixed fee applies. For claims between £10,000.01 and £200,000, the fee is typically 5% of the claim value. For claims exceeding £200,000, a maximum fee of £10,000 is payable. These fees are subject to change and must be paid at the time the claim form is issued by the court."
+  },
+  {
+    "id": "solicitor_fees",
+    "name": "Solicitor Guideline Hourly Rates",
+    "source": "Senior Courts Costs Office (SCCO) Guideline Hourly Rates",
+    "summary": "Estimate solicitor costs based on guideline hourly rates. These rates vary by the fee earner's experience and the geographic location of their firm.",
+    "legal_basis": "The Guideline Hourly Rates (GHRs) are set by the Senior Courts Costs Office (SCCO) and provide a framework for the summary assessment of costs in legal proceedings. They are not mandatory but are a key reference for courts when determining reasonable and proportionate legal fees. The rates are categorised into national bands and London bands, reflecting regional variations in overheads. Within each band, rates are graded (A to D) based on the fee earner's seniority and experience, from senior solicitors (A) to trainees and paralegals (D)."
+  },
+  {
+    "id": "interest_calculator",
+    "name": "Statutory Interest on Debts",
+    "source": "Late Payment of Commercial Debts (Interest) Act 1998 / County Courts Act 1984",
+    "summary": "Calculate statutory interest owed on late commercial payments or on debts subject to a court judgment. Different rates apply depending on the type of debt.",
+    "legal_basis": "For commercial debts, the Late Payment of Commercial Debts (Interest) Act 1998 allows businesses to claim interest on overdue invoices at a rate of 8% plus the prevailing Bank of England base rate. For debts awarded by a court (judgment debts) over £5,000, interest accrues at a statutory rate of 8% per annum under Section 17 of the County Courts Act 1984. The calculation is typically based on a daily rate applied over the period the debt remains unpaid."
+  },
+  {
+    "id": "day_calculator",
+    "name": "Working Day & Holiday Calculation",
+    "source": "Banking and Financial Dealings Act 1971",
+    "summary": "Determine the number of working days between two dates, excluding weekends and official bank holidays in England and Wales. Essential for legal deadlines.",
+    "legal_basis": "The calculation of 'working days' for legal and contractual deadlines typically excludes Saturdays, Sundays, and bank holidays. Bank holidays in England and Wales are defined by the Banking and Financial Dealings Act 1971 and subsequent royal proclamations. These include standard holidays like New Year's Day, Good Friday, Easter Monday, May bank holidays, the August bank holiday, Christmas Day, and Boxing Day. When a fixed holiday falls on a weekend, a substitute weekday is designated. This calculation is critical for complying with court timetables and contractual obligations."
+  }
+]
