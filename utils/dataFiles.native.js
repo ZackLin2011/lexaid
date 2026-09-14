@@ -1,7 +1,8 @@
 import { File, Directory, Paths } from 'expo-file-system';
 
-// native version: actually copy the photo into the app documents folder.
-// used on real devices / Expo Go, where the file system exists.
+// native helpers for anything that touches the file system.
+// only works on real devices / expo go, not in the browser.
+
 export function savePhotoToAppDir(tempUri) {
     const evidenceDir = new Directory(Paths.document, 'evidence');
     evidenceDir.create({ intermediates: true, idempotent: true });
@@ -13,4 +14,11 @@ export function savePhotoToAppDir(tempUri) {
 export function deletePhotoFile(uri) {
     if (!uri) return;
     new File(uri).delete();
+}
+
+export function writeExportFile(jsonData) {
+    const exportFile = new File(Paths.document, 'lexaid_export.json');
+    exportFile.create({ overwrite: true });
+    exportFile.write(jsonData);
+    return exportFile.uri;
 }

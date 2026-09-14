@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, ScrollView, Button, Alert } from 'react-native'
 import { useTheme } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Sharing from 'expo-sharing';
-import { File, Paths } from 'expo-file-system';
+import { writeExportFile } from '../../utils/dataFiles';
 
 const DataManagementScreen = () => {
   const { colors } = useTheme();
@@ -33,10 +33,11 @@ const DataManagementScreen = () => {
       const allData = await AsyncStorage.multiGet(dataKeys);
       const jsonData = JSON.stringify(Object.fromEntries(allData), null, 2);
       
-      const exportFile = new File(Paths.document, 'lexaid_export.json');
-      exportFile.create({ overwrite: true });
-      exportFile.write(jsonData);
-      const fileUri = exportFile.uri;
+      const fileUri = writeExportFile(jsonData);
+      if (!fileUri) {
+        Alert.alert('Not available', 'Export is not supported in the web preview. Try it on your phone with Expo Go.');
+        return;
+      }
 
       if (await Sharing.isAvailableAsync()) {
         await Sharing.shareAsync(fileUri, { mimeType: 'application/json', dialogTitle: 'Export your data' });

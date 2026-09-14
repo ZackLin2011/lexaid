@@ -3,7 +3,7 @@ import { View, Text, TextInput, ScrollView, StyleSheet, TouchableOpacity, Alert,
 import { useRoute, useNavigation, useTheme } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'expo-image-picker';
-import { savePhotoToAppDir, deletePhotoFile } from './evidenceFiles';
+import { savePhotoToAppDir, deletePhotoFile } from '../../utils/dataFiles';
 import { Ionicons } from '@expo/vector-icons';
 import { useScaledFontSize } from '../../contexts/SettingsContext';
 import { Picker } from '@react-native-picker/picker'; // Assuming this is used in the project
