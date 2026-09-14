@@ -75,5 +75,3 @@ data/                  seed data
 
 
 * The weather feature needs an internet connection; all other features work offline.
-
-* For submission, zip the project with `node_modules/` removed.

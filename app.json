@@ -6,6 +6,15 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#ffffff",
-    "platforms": ["ios", "android"]
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "66e5b1c4-3319-4bea-8dfd-76f0a74962d5"
+      }
+    },
+    "owner": "zhixinglin"
   }
 }
