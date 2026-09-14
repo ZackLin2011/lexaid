@@ -15,6 +15,12 @@
         "projectId": "66e5b1c4-3319-4bea-8dfd-76f0a74962d5"
       }
     },
-    "owner": "zhixinglin"
+    "owner": "zhixinglin",
+    "android": {
+      "package": "com.lexaid.app"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker"
+    ]
   }
 }
